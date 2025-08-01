@@ -21,7 +21,7 @@ function DashboardBtn() {
 
     return (
         <Link href="/dashboard">
-            <Button className="gap-2 font-medium" size="sm">
+            <Button className="gap-2 font-medium hover:cursor-pointer" size="sm">
                 <SparklesIcon className="size-4" />
                 Dashboard
             </Button>
