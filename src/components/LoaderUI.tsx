@@ -8,7 +8,6 @@ function LoaderUI() {
                 <Skeleton className="h-10 w-1/3 mb-3" />
                 <Skeleton className="h-5 w-2/3" />
             </div>
-
             {/* Grid Skeleton */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {Array.from({ length: 4 }).map((_, i) => (
