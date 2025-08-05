@@ -101,3 +101,11 @@ export const getMeetingStatus = (interview: Interview) => {
   if (isBefore(now, interviewStartTime)) return "upcoming";
   return "completed";
 };
+
+export function formatTime12Hour(time: string) {
+  const [hourStr, minute] = time.split(":");
+  let hour = parseInt(hourStr);
+  const ampm = hour >= 12 ? "PM" : "AM";
+  hour = hour % 12 || 12; // convert 0 to 12
+  return `${hour}:${minute} ${ampm}`;
+}
